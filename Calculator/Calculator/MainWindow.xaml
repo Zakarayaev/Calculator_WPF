@@ -1,0 +1,50 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid x:Name="mainGridRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="mainTextLabel" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Text="0" FontSize="36" TextAlignment="Right"/>
+
+        <Button Grid.Row="1" Grid.Column="0" FontSize="24" FontWeight="Bold" x:Name="oneButton">1</Button>
+        <Button Grid.Row="1" Grid.Column="1" FontSize="24" FontWeight="Bold" x:Name="twoButton">2</Button>
+        <Button Grid.Row="1" Grid.Column="2" FontSize="24" FontWeight="Bold" x:Name="threeButton">3</Button>
+        <Button Grid.Row="2" Grid.Column="0" FontSize="24" FontWeight="Bold" x:Name="fourButton">4</Button>
+        <Button Grid.Row="2" Grid.Column="1" FontSize="24" FontWeight="Bold" x:Name="fiveButton">5</Button>
+        <Button Grid.Row="2" Grid.Column="2" FontSize="24" FontWeight="Bold" x:Name="sixButton">6</Button>
+        <Button Grid.Row="3" Grid.Column="0" FontSize="24" FontWeight="Bold" x:Name="sevenButton">7</Button>
+        <Button Grid.Row="3" Grid.Column="1" FontSize="24" FontWeight="Bold" x:Name="eightButton">8</Button>
+        <Button Grid.Row="3" Grid.Column="2" FontSize="24" FontWeight="Bold" x:Name="nineButton">9</Button>
+        <Button Grid.Row="4" Grid.Column="1" FontSize="24" FontWeight="Bold" x:Name="zeroButton">0</Button>
+
+        <Button Grid.Row="1" Grid.Column="3" FontSize="24" FontWeight="Bold" x:Name="additionButton">+</Button>
+        <Button Grid.Row="2" Grid.Column="3" FontSize="30" FontWeight="Bold" x:Name="subtractionButton">-</Button>
+        <Button Grid.Row="3" Grid.Column="3" FontSize="24" FontWeight="Bold" x:Name="multiplicationButton">*</Button>
+        <Button Grid.Row="4" Grid.Column="3" FontSize="24" FontWeight="Bold" x:Name="divisionButton">/</Button>
+
+        <Button Grid.Row="1" Grid.Column="4" FontSize="24" FontWeight="Bold" x:Name="clearLastCharacterButton">C</Button>
+        <Button Grid.Row="2" Grid.Column="4" FontSize="24" FontWeight="Bold" x:Name="clearAllButton">AC</Button>
+        <Button Grid.Row="3" Grid.Column="4" FontSize="24" FontWeight="Bold" x:Name="plusOrMinusButton">+/-</Button>
+        <Button Grid.Row="4" Grid.Column="4" FontSize="30" FontWeight="Bold" x:Name="equalsButton">=</Button>
+        
+        <Button Grid.Row="4" Grid.Column="0" x:Name="firstEmptyButton"></Button>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="secondEmptyButton"></Button>
+    </Grid>
+</Window>
